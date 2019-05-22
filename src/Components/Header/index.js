@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import styles from "./_styles.scss";
+import styles from "../Header/_styles.scss";
 
 class HeaderComponent extends Component{
 
