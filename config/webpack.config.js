@@ -425,13 +425,13 @@ module.exports = function(webpackEnv) {
             {
               test: sassRegex,
               exclude: sassModuleRegex,
-              use: getStyleLoaders(
-                {
-                  importLoaders: 2,
-                  sourceMap: isEnvProduction && shouldUseSourceMap,
-                },
-                'sass-loader'
-              ),
+              use: [{
+                loader: "style-loader" // creates style nodes from JS strings
+              }, {
+                loader: "css-loader" // translates CSS into CommonJS
+              }, {
+                loader: "sass-loader" // compiles Sass to CSS
+              }],
               // Don't consider CSS imports dead code even if the
               // containing package claims to have no side effects.
               // Remove this when webpack adds a warning or an error for this.
