@@ -25,6 +25,9 @@ class HeaderComponent extends Component{
                         <li>
                             <Link to="/hacker-news">Hacker News</Link>
                         </li>
+                        <li>
+                            <Link to="/shopping-cart">Shopping Cart</Link>
+                        </li>
                     </ul>
                 </nav>
             </header>

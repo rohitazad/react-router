@@ -1,0 +1,38 @@
+.shoppingCart {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3), 0px 2px 4px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    
+    .showHideBtn{
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    .accordian.hide, .hide{
+        display: none;
+    }
+    .accordian.show, .show{
+        display: block;
+    }
+    .formSec{
+        border: solid 1px #ccc;
+        padding: 15px 20px;
+        border-radius: 5px;
+    }
+    .card-title.h5 small {
+        font-size: 50%;
+    }
+    .card-title.h5 {
+        margin-top: 20px;
+    }
+    span.indRupeSybel {
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 7px;
+    }
+    .col {
+        line-height: 22px;
+    }
+}
